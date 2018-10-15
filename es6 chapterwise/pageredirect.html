@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+   <head> 
+      <script> 
+         function newLocation() { 
+            window.location = "http://www.webonerds.com";
+           
+         } 
+         function replaceLocation() { 
+            window.location.replace("https://www.tutorialspoint.com/es6/es6_page_redirect.htm");            
+         } 
+
+          function assignLocation() { 
+            window.location.assign("https://www.google.co.in/search?q=how+to+enable+cookies+in+chrome&oq=how+to+enable+cookies&aqs=chrome.1.69i57j0l5.9002j0j7&sourceid=chrome&ie=UTF-8"); 
+           
+         } 
+         function reloadLocation() { 
+            window.location.reload("");
+         } 
+        
+      </script> 
+   </head> 
+
+   <body>
+       <div>
+           <pre>in JavaScript, you can use many methods to redirect a web page to another one0. Almost all methods are related to window.location object, which is a property of the Window object. It can be used to get the current URL address (web address) and to redirect the browser to a new page. Both usages are same in terms of behavior. window.location returns an object. If .href is not set, window.location defaults to change the parameter .href.</pre>
+           
+           <input type = "button" value = "Go to new location" onclick = "newLocation()"> 
+        </div> 
+        <div>
+            <pre>
+                    The other most frequently used method is the replace() method of window.location object, it will replace the current document with a new one. In replace() method, you can pass a new URL to replace() method and it will perform an HTTP redirect.
+            </pre>
+            <input type = "button" value = "replacelocation" onclick = "replaceLocation()"> 
+        </div>
+        <div>
+            <pre>
+                    The location.assign() method loads a new document in the browser window.
+
+                    Following is the syntax for the same.
+            </pre>
+        
+            <input type = "button" value = "assignlocation" onclick = "assignLocation()"> 
+        </div>
+        <div>
+            <pre>
+                    The location.reload() method reloads the current document in the browser window.
+            </pre>
+            <input type = "button" value = "reloadlocation" onclick = "reloadLocation()"> 
+            
+        </div>
+
+        <div>
+            <h3>
+                    assign() vs. replace()
+            </h3>
+            <pre>
+                    The difference between assign() and replace() method is that the location.replace() method deletes the current URL from the document history, so it is unable to navigate back to the original document. You can't use the browsers "Back" button in this case. If you want to avoid this situation, you should use location.assign() method, because it loads a new Document in the browser.
+            </pre>
+        </div>
+        <div>
+            <pre>
+                    window.navigate()
+
+                    The window.navigate() method is similar to assigning a new value to the window.location.href property. Because it is only available in MS Internet Explorer, so you should avoid using this in cross-browser development.
+                    
+                    Following is the syntax for the same.
+                    
+                    window.navigate("http://www.abc.com"); 
+            </pre>
+        </div>
+        <div>
+            <pre>
+                    Redirection and Search Engine Optimization
+                    If you want to notify the search engines (SEO) about your URL forwarding, you should add the rel = "canonical" meta tag to your website head part because search engines don't analyze JavaScript to check the redirection.
+                    
+                    Following is the syntax for the same.
+                    
+                    <link rel = "canonical" href = "http://abc.com/" />
+            </pre>
+        </div>
+      
+   </body> 
+</html>

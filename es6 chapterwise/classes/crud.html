@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script>
+        // ES6 get and set
+        class Person {
+            constructor(id,fname,lname,mobile,email,address,age) {
+            this.id = id;
+            this.fname = fname;
+            this.lname = lname;
+            this.mobile = mobile;
+            this.email = email;
+            this.address = address;
+            this.age = age;
+
+            console.log(`value of id = ${this.id}`);
+            }
+            get id() {
+                return this._id;
+            }
+
+            set id(newId) {
+                this._id = newId; 
+               
+                 // validation could be checked here such as only allowing non numerical values
+            }
+            get fname() {
+                return this._fname;
+            }
+
+            set fname(newFname) {
+                this._fname = newFname; 
+                //  console.log("****");
+                 // validation could be checked here such as only allowing non numerical values
+            }
+
+            get lname(){
+                return this._lname;
+            }
+            set lname(newLname) {
+                this._lname = newLname; 
+                //  console.log(newLname);
+                 // validation could be checked here such as only allowing non numerical values
+            }
+            get mobile(){
+                return this._mobile;
+            }
+            set mobile(newMobile) {
+                this._mobile = newMobile; 
+                //  console.log(newMobile);
+                 // validation could be checked here such as only allowing non numerical values
+            }
+            get email(){
+                return this._email;
+            }
+            set email(newEmail) {
+                this._email = newEmail; 
+                //  console.log(newEmail);
+                 // validation could be checked here such as only allowing non numerical values
+            }
+            get address(){
+                return this._address;
+            }
+            set address(newAddress) {
+                this._address = newAddress; 
+                //  console.log(newAddress);
+                 // validation could be checked here such as only allowing non numerical values
+            }
+            get age(){
+                return this._age;
+            }
+            set age(newAge) {
+                this._age = newAge; 
+               
+                 // validation could be checked here such as only allowing non numerical values
+            }
+            
+
+
+
+            
+             Create() {
+
+               let createQuery = ` INSERT INTO Person (id, fname, lname, mobile, email, address,age)
+                VALUES ('${this.id}', '${this.fname}', '${this.lname}', '${this.mobile}', '${this.email}', '${this.address}','${this.age}'); `    
+                
+                console.log(createQuery);
+            }
+
+            Update() {
+                   
+                
+                let updateQuery = ` UPDATE Person SET fname = '${this.fname}', address= '${this.address}' WHERE id = '${this.id};`
+                console.log(updateQuery);
+
+            }
+
+            Delet(){
+                let del = ` DELETE FROM Customers WHERE Name='${this.fname}';`
+                console.log(del);
+            }
+        }
+
+            
+                
+         let p1 = new Person(1,"Arvind","Udawant",9637754844,"arvind@gmail.com","Pune",25);
+        //  let p2 = new Person(1,"abc","xyz",9637754844,"abcd@gmail.com","Pune",30);
+            p1.Create();
+            p1.Update();
+            p1.Delet();
+        // console.log(bob.id);  // Outputs 'BOB'
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

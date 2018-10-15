@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>
+            Use strict mode of javascript
+        </title>
+        <script>
+
+            
+            "use strict";
+
+            //  v = 10;
+            
+            // console.log(v); //because of use strict mode :-> error: Uncaught ReferenceError: v is not defined
+  
+   // -------------------------------------------------------         
+        //    function x(p1,p1){
+
+       //    }; //Uncaught SyntaxError: Duplicate parameter name not allowed in this context
+        
+  //----------------------------------------------------    
+      //  x = 010; Uncaught SyntaxError: Octal literals are not allowed in strict mode.
+// -----------------------------------------------
+            // var obj = {};
+            // Object.defineProperty(obj, "x", {value:0, writable:false});
+
+            // obj.x = 3.14;
+
+// -----------------------------------------
+
+ //           var obj = {get x() {return 0}};
+   //         obj.x = 3.14; Uncaught TypeError: obj.defineProperties is not a function
+ 
+// ---------------------------------------------------   
+
+   //eval = 3.14 Uncaught SyntaxError: Unexpected eval or arguments in strict mode
+     
+// ---------------------------------------------------
+
+//with (math){x= cos(2)}; Uncaught SyntaxError: Strict mode code may not include a with statement
+
+// --------------------------------------------------------------------------------------------
+
+
+
+     </script>
+    </head>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <script>
+            let arr = [ 12,15, [20,15,[25,30]] ];
+            let temp = [];
+
+             function fun(arr) {
+                    for(i=0; i <= arr.length-1;i++) {
+
+                        if(typeof (arr[i]) == 'object') {
+
+                            fun(arr[i]);
+
+                        }else {
+
+                            temp.push(arr[i]);
+                            
+                        }
+                       
+                    }
+                    
+                    console.log(temp);
+            }
+           
+               fun(arr);
+        </script>
+    </head>
+</html>

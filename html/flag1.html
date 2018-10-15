@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* body {
+            background-color: rgb(246, 255, 255); 
+        }
+        .flag {
+            font-size: 7px;
+            width: 90em;
+            height: 60em;
+            border: 1px solid #aaa; 
+            margin-bottom: 0px;           
+            float: left;
+        }
+        .stripe{
+            height: 33.33%;
+            box-sizing: border-box;
+
+        }
+        .stripe1{
+            background-color: #FF9933; 
+        }
+        .stripe2{
+            padding: 1em;
+            background-color: white;
+        }
+        .stripe3{
+            background-color: #138808;
+          
+        }
+        .chakra{
+            width: 16em;
+            height: 16em;
+            position: relative;
+            border: 0.8em solid navy;
+            border-radius: 50%;
+            margin: 0 auto;
+
+        }
+         chakra:before{
+
+            content: "";
+            position: absolute;
+            top: 6.5em;
+            left: 6.5em;
+            width: 3em;
+            height: 3em;
+            background-color: navy;
+            border-radius: 50%;     
+        } */
+
+        .spoke{
+            width:1em;
+            height:0;
+            position: absolute;
+            top: 13.6em;
+    left: 19em;
+            border-top:0.25em solid transparent;
+            border-right: 2em solid navy;
+            border-bottom: 0.25em solid transparent;
+            transform-origin: 0 0.25em;
+        }
+        .spoke:before{
+            content:"";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -0.25em;
+            left:3em;
+            border-top: 0.25em solid transparent;
+            border-left: 5em solid navy;
+            border-bottom: 0.25em solid transparent;    
+        }
+
+        .spoke:after{
+            content:"";
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            top: 0.66em;
+            left:7.6em;
+            background-color: navy;
+            border-radius: 50%;
+           
+        }
+        .spoke2:after{
+            content:"";
+            position: absolute;
+            width: 0.8em;
+            height: 0.8em;
+            top: 0.66em;
+            left:7.6em;
+            background-color: transparent;
+            border-radius: 50%;
+           
+        }
+        .spoke1{
+            transform: rotate(0deg);
+        }
+        .spoke2{
+            transform: rotate(15deg);
+        }
+        .spoke3{
+            transform: rotate(30deg);
+        }
+        .spoke4{
+            transform: rotate(45deg);
+        }
+        .spoke5{
+            transform: rotate(60deg);
+        }
+        .spoke6{
+            transform: rotate(75deg);
+        }
+        .spoke7{
+            transform: rotate(90deg);
+        }
+        .spoke8{
+            transform: rotate(105deg);
+        }
+        .spoke9{
+            transform: rotate(120deg);
+        }
+        .spoke10{
+            transform: rotate(135deg);
+        }
+        .spoke11{
+            transform: rotate(150deg);
+        }
+        .spoke12{
+            transform: rotate(165deg);
+        }
+        .spoke13{
+            transform: rotate(180deg);
+        }
+        .spoke14{
+            transform: rotate(195deg);
+        }
+        .spoke15{
+            transform: rotate(210deg);
+        }
+        .spoke16{
+            transform: rotate(225deg);
+        }
+        .spoke17{
+            transform: rotate(240deg);
+        }
+        .spoke18{
+            transform: rotate(255deg);
+        }
+        .spoke19{
+            transform: rotate(270deg);
+        }
+        .spoke20{
+            transform: rotate(285deg);
+        }
+        .spoke21{
+            transform: rotate(300deg);
+        }
+        .spoke22{
+            transform: rotate(315deg);
+        }
+
+         .spoke23{
+            transform: rotate(330deg);
+        } .spoke24{
+            transform: rotate(345deg);
+        }
+
+         .spoke1{
+            transform: rotate(0deg);
+        }   
+        .caption{
+            float: left;
+            margin-bottom: 0px;
+   
+          
+        }
+        .footer{
+            
+            margin-top: 8%;
+            margin-left: 0px;
+        }
+        .chakra{
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="flag">
+        <div class="stripe stripe1">
+
+        </div>
+        <div class="stripe stripe2"> -->
+            <div class="chakra">
+                 <div class="spoke spoke1"></div>
+                <div class="spoke spoke2"></div>
+                <!--<div class="spoke spoke3"></div>
+                <div class="spoke spoke4"></div>
+                <div class="spoke spoke5"></div>
+                <div class="spoke spoke6"></div>
+                <div class="spoke spoke7"></div>
+                <div class="spoke spoke8"></div>
+                <div class="spoke spoke9"></div>
+                <div class="spoke spoke10"></div>
+                <div class="spoke spoke11"></div> -->
+                <div class="spoke spoke12"></div>
+                <div class="spoke spoke13"></div>
+                <div class="spoke spoke14"></div>
+                <div class="spoke spoke15"></div>
+                <div class="spoke spoke16"></div>
+                <div class="spoke spoke17"></div>
+                <div class="spoke spoke18"></div>
+                <div class="spoke spoke19"></div>
+                <div class="spoke spoke20"></div>
+                <div class="spoke spoke21"></div>
+                <div class="spoke spoke22"></div>
+                <div class="spoke spoke23"></div>
+                <div class="spoke spoke24"></div>
+             </div>
+       <!-- </div>
+        <div class="stripe stripe3">
+        
+        </div>
+
+    </div>
+
+    <div class="catption">
+               <pre> 
+                <h3  style=" font-family: 'Times New Roman', Times, serif; font-style: oblique; color:red; font-size: 30px">
+                     Dil se niklegi na markar  
+                     bhi watan ki ulfat
+                     Meri mitti se bhi
+                     Khushboo-e-watan aaegi. 
+                        -Sardar Bhagat Singh
+                </h3>
+               
+             </pre>
+      
+    </div>
+
+   <div class="footer">
+
+        <marquee>
+           
+                <h1>
+                    <nav style="color:#FF9933"> Happy</nav> 
+                    <nav style="color:navy">Independance</nav>
+                    <nav style="color: #138808"> Day...!!!</nav>
+                </h1>
+           
+        </marquee>
+
+   </div> -->
+</body>
+</html>
